@@ -11,8 +11,7 @@ def sum(ports):
             number = proxy.generate_number()
             print(f"Node {i} generated number: {number}")
             total_sum += number
-    
-    print(f"Total sum of numbers: {total_sum}")
+    return total_sum
 
 if __name__ == '__main__':
     if len(sys.argv) == 1:
