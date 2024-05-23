@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+service DCSNumberCollector {
+  rpc CollectNumbers (CollectRequest) returns (CollectResponse);
+}
+
+message CollectRequest {
+  int32 node_id = 1;
+}
+
+message CollectResponse {
+  int32 number = 1;
+}
